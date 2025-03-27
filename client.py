@@ -47,7 +47,7 @@ async def run_agent_multi():
             "math": {
                 "command": "python",
                 # Make sure to update to the full absolute path to your math_server.py file
-                "args": ["server.py"],
+                "args": ["server_math.py"],
                 "transport": "stdio",
             },
             "weather": {
