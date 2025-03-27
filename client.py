@@ -15,7 +15,7 @@ import os
 # Load environment variables from .env file
 load_dotenv()
 
-model = ChatOpenAI(model="llama-3.3-70b-instruct", base_url="https://api.scaleway.ai/1244a760-c3c6-47bc-abb8-fff71b633023/v1", api_key=os.getenv("SCW_SECRET_KEY"))
+model = ChatOpenAI(model="llama-3.3-70b-instruct", base_url=os.getenv("SCW_ENDPOINT_URL"), api_key=os.getenv("SCW_SECRET_KEY"))
 
 server_params = StdioServerParameters(
     command="python",
