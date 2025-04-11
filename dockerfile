@@ -18,4 +18,4 @@ EXPOSE 8000
 ENV PYTHONUNBUFFERED=1
 
 # Command to run the application
-CMD ["uvx", "mcpo", "--port", "8000", "--api-key", "top-secret", "--", "python", "server_math.py"]
+CMD ["uvx", "mcpo", "--port", "8000", "--api-key", "top-secret", "--", "uv", "run", "server_math.py"]
